@@ -26,9 +26,13 @@ print(new[0])
 print(new[1])
 
 
-good = []
-for d in data:
-	if 'good' in d:
-		good.append(d)
-print('一共有',len(good), '筆留言提到good')
-print(good[0])
+# good = []
+# for d in data:
+# 	if 'good' in d:
+# 		good.append(d)
+# print('一共有',len(good), '筆留言提到good')
+# print(good[0])
+
+#等於29~34行
+good = [d for in data if 'good' in d] #第一個d是good.append(d)的d
+print(good)
